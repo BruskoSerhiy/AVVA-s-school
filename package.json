@@ -1,0 +1,23 @@
+{
+  "name": "avva-s-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles": "sass styles/index.scss styles.css",
+    "dev": "sass styles/index.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BruskoSerhiy/AVVA-s-school.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BruskoSerhiy/AVVA-s-school/issues"
+  },
+  "homepage": "https://github.com/BruskoSerhiy/AVVA-s-school#readme",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
+}
