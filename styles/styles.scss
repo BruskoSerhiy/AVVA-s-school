@@ -1,0 +1,196 @@
+.container {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+.root-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 180px;
+}
+.image-logo {
+  width: 272px;
+  height: 103px;
+  padding-left: 109px;
+  padding-top: 14px;
+}
+.header-blocks {
+  display: flex;
+  gap: 50px;
+  padding-right: 100px;
+  padding-top: 25px;
+}
+.header-block-one {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.number {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #d99565;
+  text-decoration: none;
+}
+.phone-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4e5054;
+  text-transform: uppercase;
+}
+.header-block-two {
+  display: flex;
+  flex-direction: column;
+}
+.header-links {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  color: #4e5054;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-block-three {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.header-exid {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  color: #4e5054;
+  text-transform: uppercase;
+}
+.header-line {
+  border-left: 1px solid #d6965d;
+  height: 15px;
+  padding-left: 5px;
+  transform: skew(-15deg, 0);
+}
+
+/* aside start */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  max-width: 1438px;
+  height: 100px;
+  background: #4e5054;
+  border-radius: 50px;
+  margin: 0 100px;
+  position: absolute;
+  top: 130px;
+}
+.nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-btn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav-btns li {
+  transition: 0.3s;
+}
+
+.nav-btns li:hover {
+  cursor: pointer;
+  background-color: rgba(47, 50, 54, 0.447152);
+  box-shadow: 0 12px 25px;
+}
+.nav-btn-style {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 5px;
+}
+.btn-padings {
+  padding-left: 30px;
+}
+.hover-style:hover {
+  border-radius: 50px 0 0 50px;
+}
+.nav-btn-style:hover {
+  color: #d99565;
+}
+.nav-btn-message {
+  border: none;
+  background-color: #d99565;
+  border-radius: 0px 100px 100px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.nav-btn-message:hover {
+  background-color: rgba(19, 19, 19, 0.566916);
+}
+
+/* aside end */
+
+/* start main */
+
+.main-block-one {
+  background-image: url(/images/ksaschool.jpg);
+  height: 80vh;
+  max-width: 1500px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-title {
+  position: relative;
+}
+.main-title-text {
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 85px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 210px;
+  left: 170px;
+}
+.main-title-subtext {
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 46px;
+  color: #ffffff;
+}
+.main-button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main-btn {
+  background-color: #d6965d;
+  border: none;
+  padding: 18px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.main-btn:hover {
+  background-color: rgba(19, 19, 19, 0.566916);
+}
