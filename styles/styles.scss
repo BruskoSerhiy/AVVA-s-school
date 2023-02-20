@@ -1,6 +1,5 @@
-.container {
+body {
   box-sizing: border-box;
-  min-width: 1680px;
   font-family: "Work Sans", sans-serif;
 }
 .root-header {
@@ -82,24 +81,25 @@
 
 .nav {
   display: flex;
-  min-width: 1438px;
   height: 100px;
-  background: #4e5054;
-  border-radius: 50px;
-  margin: 0 100px;
-  position: absolute;
-  top: 130px;
-  left: 29px;
+  max-width: 1400px;
+  position: relative;
+  bottom: 50px;
 }
 .nav-btns {
   display: flex;
   height: 100%;
   gap: 20px;
+  background: #4e5054;
+  border-radius: 50px 0 0 50px;
 }
 .nav-btn {
   display: flex;
   align-items: center;
-  height: 100%;
+}
+.nav-btn-one {
+  display: flex;
+  align-items: center;
 }
 .nav-btns li {
   transition: 0.3s;
@@ -133,7 +133,7 @@
 }
 .nav-btn-message {
   border: none;
-  min-width: 265px;
+  max-width: 230px;
   background-color: #d99565;
   border-radius: 0px 100px 100px 0px;
   font-weight: 400;
@@ -145,10 +145,6 @@
   cursor: pointer;
   height: 100%;
 }
-.nav-btn-message:hover {
-  background-color: rgba(19, 19, 19, 0.566916);
-  color: #d6965d;
-}
 
 /* aside end */
 
@@ -159,9 +155,8 @@
 }
 .main-block-one {
   background-image: url(/images/ksaschool.jpg);
-  height: 85vh;
-  max-width: 100%;
-  min-width: 1300px;
+  height: 80vh;
+  min-width: 100%;
   background-repeat: no-repeat;
 }
 .main-title {
@@ -220,15 +215,16 @@
   height: 360px;
 }
 .card-img {
+  display: flex;
+  justify-content: center;
   border-bottom: 1px solid #797c83;
   width: 224px;
-  position: relative;
-  top: 120px;
+  padding-bottom: 40px;
 }
 .card-desc {
   font-weight: 300;
   font-size: 18px;
-  margin-top: 70px;
+  margin-top: 35px;
   margin-bottom: 20px;
   text-align: center;
   color: #ffffff;
@@ -253,10 +249,11 @@
   height: 360px;
 }
 .card-img-two {
+  display: flex;
+  justify-content: center;
   border-bottom: 1px solid #ffffff;
   width: 120px;
-  position: relative;
-  top: 80px;
+  padding-bottom: 20px;
 }
 .card-desc-two {
   font-weight: 300;
@@ -297,17 +294,22 @@
   background-color: #675141;
 }
 .card-img-three {
-  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
   width: 224px;
-  position: relative;
-  top: 130px;
+  padding-bottom: 30px;
 }
 .card-img-four {
-  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
   width: 224px;
+  padding-bottom: 30px;
+}
+.card-four-position {
   position: relative;
-  top: 130px;
-  margin-top: -40px;
+  bottom: 20px;
 }
 .card-desc-three {
   font-weight: 300;
@@ -436,6 +438,11 @@
   position: relative;
   z-index: 3;
 }
+.main-block-four-position {
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
 .main-block-four-questionnaire {
   display: flex;
   justify-content: center;
@@ -459,6 +466,8 @@
   height: 555px;
   background-color: rgba(250, 248, 248, 0.1);
   border-radius: 10px;
+  position: relative;
+  left: 160px;
 }
 .main-block-end-form {
   display: flex;
@@ -505,6 +514,9 @@ textarea {
   font-size: 11px;
   line-height: 20px;
   color: #ffffff;
+}
+textarea {
+  resize: none;
 }
 
 /* end main */
@@ -563,9 +575,64 @@ textarea {
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  color: #D99565;
+  color: #d99565;
 }
 .footer-btn:hover {
   background-color: rgba(19, 19, 19, 0.566916);
   transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .main-block-four-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .main-block-one {
+    height: 60vh;
+  }
+  .main-block-four-questionnaire {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1140px) {
+  .nav-adaptation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-btn-one {
+    display: flex;
+    justify-content: center;
+    min-width: 230px;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .header-block-one {
+    display: none;
+  }
+  .header-block-two {
+    display: none;
+  }
+  .footer-block-one-two {
+    display: none;
+  }
+  .main-block-end-title {
+    text-align: center;
+  }
 }
