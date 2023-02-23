@@ -46,7 +46,7 @@
       <div class="main-block-one">
         <nav class="nav">
           <ul class="nav-btns">
-            <li class="nav-btn-one hover-style ">
+            <li class="nav-btn-one hover-style">
               <a class="nav-btn-style btn-padings" href="#">главная</a>
             </li>
             <li class="nav-btn">
@@ -396,21 +396,27 @@
               <div class="main-block-end-title">
                 Мы рады ответить Вам на все вопросы:
               </div>
-              <div class="main-block-end-forms">
+              <form action="#" name="main" class="main-block-end-forms">
                 <div class="main-block-end-form">
                   <label>
                     <input
+                      id="name"
+                      name="formName"
                       class="form-style"
                       type="text"
                       placeholder="Ваше имя"
+                      value=""
                     />
                   </label>
                 </div>
                 <div class="main-block-end-form form-other-padding">
                   <label>
                     <input
+                      id="tel"
+                      name="formTel"
                       class="form-style"
                       type="tel"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                       placeholder="Контактный телефон"
                     />
                   </label>
@@ -420,6 +426,8 @@
                 >
                   <label>
                     <input
+                      id="formEmail"
+                      name="email"
                       class="form-style"
                       type="email"
                       placeholder="Электронная почта"
@@ -430,7 +438,7 @@
                   <textarea
                     class="form-style form-style-textarea"
                     name="comment"
-                    id="#"
+                    id="formComment"
                     cols="65"
                     rows="5"
                     placeholder="Сообщение"
@@ -441,11 +449,11 @@
                     *Нажимая на кнопку отправить, я соглашаюсь с условиями
                     политики конфиденциальности
                   </p>
-                  <div class="main-btn">
+                  <button type="submit" class="main-btn">
                     <a class="main-button" href="#">Отправить</a>
-                  </div>
+                  </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -482,5 +490,6 @@
         </button>
       </div>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
